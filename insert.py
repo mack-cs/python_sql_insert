@@ -2,9 +2,9 @@ from collections import OrderedDict
 from peewee import *;
 import pandas as pd
 
-db = MySQLDatabase("mychina", host="localhost",port=3306, user="root", password="photobooth")
+db = MySQLDatabase("mychina", host="localhost",port=3306, user="root", password="")
 
-file = "2021MarAllCapturedSorted.csv"
+file = "sample.csv"
 
 class Product(Model):
 	barcode = CharField(unique = True)
